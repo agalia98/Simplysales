@@ -6,9 +6,9 @@
     <title>SimplySales | Networking Specialist Agents • Training & Consultancy</title>
     <style>
         :root {
-            --primary-blue: #0E2A47;    /* Dark blue from the logo/presentation */
-            --primary-orange: #EC7132;  /* Orange from the logo */
-            --accent-blue: #00A3E0;     /* Light blue from hexagons in presentation */
+            --primary-blue: #4167ea;    /* Blue from the logo background */
+            --secondary-yellow: #ffd64c; /* Yellow from "sales" in the logo */
+            --white: #FFFFFF;           /* White text */
             --light-gray: #F5F7FA;      /* Background color */
             --text-dark: #333333;       /* Text color */
             --text-light: #FFFFFF;      /* Light text */
@@ -72,35 +72,41 @@
         }
         
         .btn {
-            background-color: var(--primary-orange);
-            color: white;
+            background-color: var(--secondary-yellow);
+            color: var(--primary-blue);
             padding: 10px 20px;
             border-radius: 4px;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: background-color 0.3s;
             display: inline-block;
         }
         
         .btn:hover {
-            background-color: var(--accent-blue);
+            background-color: #e6bf36;
+            color: var(--primary-blue);
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary-blue), #244c7c);
+            background: var(--primary-blue);
             color: white;
             padding: 100px 0 80px;
             text-align: center;
         }
         
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 3.2rem;
             margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .hero h1 span {
+            color: var(--secondary-yellow);
         }
         
         .hero p {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             max-width: 700px;
             margin: 0 auto 30px;
         }
@@ -162,7 +168,7 @@
         .service-icon {
             width: 60px;
             height: 60px;
-            background-color: var(--accent-blue);
+            background-color: var(--primary-blue);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -332,14 +338,15 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMjAwIj4KICAgIDxnIGlkPSJsb2dvIj4KICAgICAgICA8ZyBpZD0ic3ltYm9sIj4KICAgICAgICAgICAgPHBhdGggZD0iTTkwLDEzMCBDMTQwLDEzMCAxODAsOTAgMTgwLDQwIEMxODAsLTEwIDE0MCwtNTAgOTAsLTUwIEMzNSwtNTAgMCwtMTAgMCw0MCBDMCw5MCAzNSwxMzAgOTAsMTMwIHoiIGZpbGw9IiMwRTJBNDciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMCwgODUpIi8+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNSwtMzUgQy0yNSwtMzUgLTYwLDAgLTYwLDQwIEMtNjUsODAgLTI1LDExNSAxNSwxMTUgQzE1LDExNSAxNSw0MCAxNSw0MCBDMTUsNDAgMTUsLTM1IDE1LC0zNSB6IiBmaWxsPSIjRUM3MTMyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAsIDg1KSIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMTUsNDAgQzE1LC0zNSAtMzAsLTM1IC0zMCwtMzUgQy0zMCwtMzUgLTcwLDAgLTcwLDQwIEMtNzAsODAgLTMwLDExNSAtMzAsMTE1IEMtMzAsMTE1IDE1LDQwIDE1LDQwIHoiIGZpbGw9IiM5NDlCQjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMCwgODUpIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxnIGlkPSJ0ZXh0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNzAsIDg1KSI+CiAgICAgICAgICAgIDx0ZXh0IGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI1MCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzBFMkE0NyI+CiAgICAgICAgICAgICAgICA8dHNwYW4geD0iMCIgeT0iMTUiPlNpbXBseVNhbGVzPC90c3Bhbj4KICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICA8dGV4dCBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiMwRTJBNDciPgogICAgICAgICAgICAgICAgPHRzcGFuIHg9IjAiIHk9IjQwIj5OZXR3b3JraW5nIFNwZWNpYWxpc3QgQWdlbnRzIOKAoiBUcmFpbmluZyAmIENvbnN1bHRhbmN5PC90c3Bhbj4KICAgICAgICAgICAgPC90ZXh0PgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="SimplySales Logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMTUwIj4NCiAgPHJlY3QgZmlsbD0iIzQxNjdlYSIgd2lkdGg9IjYwMCIgaGVpZ2h0PSIxNTAiLz4NCiAgPHRleHQgeD0iMjAiIHk9IjgwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPnNpbXBseTwvdGV4dD4NCiAgPHRleHQgeD0iMjIwIiB5PSI4MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZkNjRjIj5zYWxlczwvdGV4dD4NCiAgPHRleHQgeD0iMjAiIHk9IjEyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI1IiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjZmZkNjRjIj5Qb3dlcmluZzwvdGV4dD4NCiAgPHRleHQgeD0iMTIwIiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iI2ZmZmZmZiI+QnVzaW5lc3M8L3RleHQ+DQogIDx0ZXh0IHg9IjIyMCIgeT0iMTI1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjUiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiNmZmQ2NGMiPkdyb3d0aDwvdGV4dD4NCjwvc3ZnPg==" alt="SimplySales Logo">
             </div>
             <nav>
                 <ul>
                     <li><a href="#mission">Mission</a></li>
                     <li><a href="#services">I Nostri Servizi</a></li>
-                    <li><a href="#contact">Contatti</a></li>
-                    <li><a href="#contact" class="btn">Richiedi Informazioni</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="partners.html">Our Partners</a></li>
+                    <li><a href="#contact" class="btn">Contattaci</a></li>
                 </ul>
             </nav>
         </div>
@@ -347,8 +354,8 @@
 
     <section class="hero">
         <div class="container">
-            <h1>SimplySales</h1>
-            <p>La tua crescita, la nostra missione</p>
+            <h1>simply<span>sales</span></h1>
+            <p>Powering Business Growth</p>
             <a href="#contact" class="btn">Contattaci</a>
         </div>
     </section>
@@ -363,7 +370,7 @@
                 <br>
                 <p>Il nostro obiettivo è diventare un partner strategico, offrendo consulenza e strumenti che consentano una gestione efficace delle reti commerciali.</p>
                 <br>
-                <p>Ci impegniamo a garantire che ogni cliente raggiunga i propri obiettivi di vendita.</p>
+                <p>Ci impegniamo a garantire che ogni cliente raggiunga i propri obiettivi di crescita.</p>
             </div>
         </div>
     </section>
